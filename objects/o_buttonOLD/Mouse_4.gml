@@ -1,4 +1,4 @@
-if (unlock == true && on == true) {
+if (unlock == true) {
 	switch(id_) {
 		case 0:
 			show_debug_message("ERROR");

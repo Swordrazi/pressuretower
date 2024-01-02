@@ -1,4 +1,4 @@
-if (countdown == 0 && unlock == true && on == true) {
+if (countdown == 0 && unlock == true) {
 	var description = "ERROR";
 	switch(id_) {
 		case 0:

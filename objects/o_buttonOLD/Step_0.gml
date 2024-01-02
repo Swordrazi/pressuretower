@@ -1,6 +1,6 @@
 switch(id_) {
 	case 0:
-		text = "ERRORRRRRRRRRRRRRRRRRRR\nUNO\nDOS\nTRES";
+		og_text = "ERRORRRRRRRRRRRRRRRRRRR\nUNO\nDOS\nTRES";
 	break;
 	case 1:
 		text = "Charge Press\n" + string(global.crush_power) + "/" + string(global.maximum_crush_needed);
@@ -52,19 +52,21 @@ switch(id_) {
 	break;
 }
 
-texts = string_split(text,"\n")
+if (text != og_text) {
+	texts = string_split(text,"\n")
 
-length = 0;
-texts_amount = array_length(texts)
+	length = 0;
+	texts_amount = array_length(texts)
 
-for (var i = 0; i < texts_amount; i++) {
-	if (length < string_width(texts[i])) {
-		length = string_width(texts[i]);
+	for (var i = 0; i < texts_amount; i++) {
+		if (length < string_width(texts[i])) {
+			length = string_width(texts[i]);
+		}
 	}
-}
 
-image_xscale = length*2/(font_get_size(font1)*font_get_size(font1));
-image_yscale = texts_amount*4/font_get_size(font1);
+	image_xscale = length*2/(font_get_size(font1)*font_get_size(font1));
+	image_yscale = texts_amount*4/font_get_size(font1);
+}
 
 if (countdown > 0 && countdown_do == true) {
 	countdown--;	
@@ -74,12 +76,4 @@ if (unlock == false) {
 	if (lock == -1 || o_Storeplace.button_unlock[lock] == true) {
 		unlock = true;	
 	}
-}
-
-if (room_get_name(room) != "Room1") {
-	o_button_1.unlock = false;	
-	o_button_2.unlock = false;	
-} else {
-	o_button_1.unlock = true;	
-	o_button_2.unlock = true;	
 }

@@ -21,8 +21,7 @@ buffer_delete(_buffer);
 // BUTTONS
 _saveData = array_create(0);
 
-for (var i = 0; i < max_button; i++) {
-	var button = o_button.id_
+with (o_buttonOLD) {
 	var _saveButton = {
 		id_ : id_,
 		level : level,

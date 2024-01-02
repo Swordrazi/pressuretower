@@ -33,7 +33,7 @@ if (file_exists("buttonsave.factory")) {
 	var _loadData = json_parse(_string);
 	
 	for (var i = 1; i <= max_button; i++) {
-		with (o_button) {
+		with (o_buttonOLD) {
 			if (id_ = i && array_length(_loadData) > 0) {
 				var _loadButton = array_pop(_loadData);
 				if (variable_struct_exists(_loadButton,string(nameof(id_)))) {
