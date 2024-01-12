@@ -23,7 +23,7 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "The amount of Wood you have, increases the speed of the Press,\n but it strengthens the Wood. \nThe increase is: " + string(o_Autoclicker.auto_crush_woodupg*o_Storeplace.item_database[1].item_amount) + "\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power);
 		break;
 		case 7:
-			description = "The paper will lose a bit of its quality, making it weaker!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power);
+			description = "The paper will lose a bit of its quality, making it weaker!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nThe price of this upgrade scales with 'Quality Paper'";
 		break;
 		case 8:
 			description = "Increases the quality of the Wood, causing it to become stronger, \nbut give more Wood!\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power) + "\nValue: " + string(o_Storeplace.item_database[1].item_value);

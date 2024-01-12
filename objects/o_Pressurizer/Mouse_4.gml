@@ -6,7 +6,7 @@ if (clicks_ > 9) {
 	prestige_ = false;
 	//PRESTIGE
 	with (o_button) {
-		if (level != 0) {
+		if (level != 0 && prestige == true) {
 			level = 0;	
 		}
 		unlock = false;
