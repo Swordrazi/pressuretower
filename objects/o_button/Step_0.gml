@@ -59,7 +59,7 @@ switch(id_) {
 		text = "Unlock The Restocker [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
 	break;
 	case 14:
-		cost = 10*(10*(level*level+10));
+		cost = 10*(10*(level*level+1));
 		text = "Wood Stock [" + string(level) + "/9]\nCost: " + string(cost) + " Wood";
 	break;
 	case 15:
@@ -100,10 +100,8 @@ if (unlock == false) {
 	}
 }
 
-/*if (room_get_name(room) != "Room1") {
-	o_button_1.unlock = false;	
-	o_button_2.unlock = false;	
+if (prestige == false) {
+	image_index = 1;	
 } else {
-	o_button_1.unlock = true;	
-	o_button_2.unlock = true;	
+	image_index = 0;	
 }
