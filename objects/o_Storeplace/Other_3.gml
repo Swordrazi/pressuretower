@@ -45,9 +45,7 @@ _saveData = array_create(0);
 
 with (o_Autoclicker) {
 	var _saveAutomation = {
-		auto_crush : auto_crush,
 		auto_crush_speed : auto_crush_speed,
-		auto_crush_woodupg : auto_crush_woodupg,
 	}
 	array_push(_saveData, _saveAutomation);
 }

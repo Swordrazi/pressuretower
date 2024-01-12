@@ -23,7 +23,6 @@ if (unlock == true && on == true) {
 			if (check_cost(0,cost)) {
 				o_Storeplace.item_database[0].item_amount -= cost;
 				level++;
-				o_Autoclicker.auto_crush += 1;
 				unlock_button(0);
 			}
 		break;
@@ -48,7 +47,6 @@ if (unlock == true && on == true) {
 			if (check_cost(1,cost)) {
 				o_Storeplace.item_database[1].item_amount -= cost;
 				level++;
-				o_Autoclicker.auto_crush_woodupg += 1;
 			}
 		break;
 		case 7:
@@ -130,6 +128,19 @@ if (unlock == true && on == true) {
 				o_Storeplace.item_database[1].item_amount -= cost;
 				level++;
 				global.xp_ += 2;
+			}
+		break;
+		case 18:
+			if (check_cost(1,cost) && level < 1) {
+				o_Storeplace.item_database[1].item_amount -= cost;
+				level++;
+			}
+		break;
+		case 19:
+			if (check_cost(0,cost)) {
+				o_Storeplace.item_database[0].item_amount -= cost;
+				level += find_button(3).level;
+				find_button(3).level = 0;
 			}
 		break;
 	}

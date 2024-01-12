@@ -55,6 +55,12 @@ if (countdown == 0 && unlock == true && on == true) {
 		case 17:
 			description = "Adds 2 XP to Pressurize";
 		break;
+		case 18:
+			description = "Strength = Value\nEvery 100 Strength a Material has, it gains 1 Value.";
+		break;
+		case 19:
+			description = "Reset Auto Pressing, but all of its levels are kept in this upgrade.\nThe price of this upgrade never changes.";
+		break;
 	}
 
 	var descriptions = string_split(description,"\n")

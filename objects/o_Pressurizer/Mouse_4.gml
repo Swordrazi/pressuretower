@@ -21,8 +21,7 @@ if (clicks_ > 9) {
 		global.order[i] = 0;
 	}
 	o_Storeplace.button_unlock[5] = 1;
-	o_Autoclicker.auto_crush = 0;
-	o_Autoclicker.auto_crush_woodupg = 0;
+	o_Storeplace.button_unlock[4] = 1;
 	
 	//NEW GEARS
 	alarm_set(0,10);

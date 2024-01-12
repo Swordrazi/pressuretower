@@ -1,19 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_GearSlotUp",
+  "name": "o_button_auto_19",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Gears",
-    "path": "folders/Objects/Gears.yy",
+    "name": "Auto Buttons",
+    "path": "folders/Objects/Buttons/Auto Buttons.yy",
   },
-  "parentObjectId": null,
-  "persistent": false,
+  "parentObjectId": {
+    "name": "o_button_auto",
+    "path": "objects/o_button_auto/o_button_auto.yy",
+  },
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_arrow",
-    "path": "sprites/spr_arrow/spr_arrow.yy",
+    "name": "spr_button",
+    "path": "sprites/spr_button/spr_button.yy",
   },
   "spriteMaskId": null,
   "visible": true,

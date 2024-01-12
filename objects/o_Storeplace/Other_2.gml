@@ -82,14 +82,8 @@ if (file_exists(working_directory + "autosave.factory")) {
 	
 	with (o_Autoclicker) {
 		var _loadAuto = array_pop(_loadData);
-		if (variable_struct_exists(_loadAuto,string(nameof(auto_crush)))) {
-			auto_crush = _loadAuto.auto_crush;
-		}
 		if (variable_struct_exists(_loadAuto,string(nameof(auto_crush_speed)))) {
 			auto_crush_speed = _loadAuto.auto_crush_speed;
-		}
-		if (variable_struct_exists(_loadAuto,string(nameof(auto_crush_woodupg)))) {
-			auto_crush_woodupg = _loadAuto.auto_crush_woodupg;
 		}
 	}
 }
@@ -125,14 +119,14 @@ if (file_exists(working_directory + "gearsave.factory")) {
 	for (var i = 0; i < array_length(o_GearStorage.gears_in); i++) {
 		var _loadGear_inStorage = array_pop(_loadData);
 		o_GearStorage.gears_in[i] = _loadGear_inStorage;
-		show_debug_message(_loadGear_inStorage)
+		//show_debug_message(_loadGear_inStorage)
 	}
 	
 	for (var i2 = 0; i2 < o_GearSlot.item_amount; i2++) {
 		for (var i = 0; i < array_length(o_GearSlot.gears_in); i++) {
 			var _loadGear_inSlot = array_shift(_loadData);
 			o_GearSlot.gears_in[i][i2] = _loadGear_inSlot;
-			show_debug_message(_loadGear_inSlot)	
+			//show_debug_message(_loadGear_inSlot)	
 		}
 	}
 		

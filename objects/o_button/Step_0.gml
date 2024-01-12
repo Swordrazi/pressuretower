@@ -67,12 +67,20 @@ switch(id_) {
 		text = "Gearing (Up) [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
 	break;
 	case 16:
-		cost = 100*((level+1)*(level+1));
+		cost = 75*((level+1)*(level+1));
 		text = "Pressurize - Paper [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 17:
-		cost = 25*((level+1)*(level+1));
+		cost = 20*((level+1)*(level+1));
 		text = "Pressurize - Wood [" + string(level) + "]\nCost: " + string(cost) + " Wood";
+	break;
+	case 18:
+		cost = 750;
+		text = "Pressure Value [" + string(level) + "/1]\nCost: " + string(cost) + " Wood";
+	break;
+	case 19:
+		cost = 1000;
+		text = "Pressure Storage [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 }
 

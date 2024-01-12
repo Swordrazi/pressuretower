@@ -21,7 +21,11 @@ if (instance_place(x,y,o_stop) || instance_place(x+9,y,o_item)) {
 }
 
 if (instance_place(x,y,o_destroyer)) {
-	o_Storeplace.item_database[id_].item_amount += floor(o_Storeplace.item_database[id_].item_value);
+	var v = 0;
+	if (find_button(18).level > 0) {
+		v += floor(o_Storeplace.item_database[id_].item_crushing_power/100)	
+	}
+	o_Storeplace.item_database[id_].item_amount += floor(o_Storeplace.item_database[id_].item_value)+v;
 	if (find_button(10).level > 0 && id_ == 0) {
 		var i = irandom_range(find_button(10).level,10)
 		if (i == 10) {

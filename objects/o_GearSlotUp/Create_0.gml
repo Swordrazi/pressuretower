@@ -1,5 +1,4 @@
-/*
-if (room_get_name(room) == "Room2" && !instance_exists(o_Gears)) {
+//LOAD
 for (var i = 0; i < o_GearSlot.gear_slots; i++) {
 	if (o_GearSlot.gears_in[i][o_GearSlot.current_item] != -1) {
 		var g = o_GearSlot.gears_in[i][o_GearSlot.current_item];
@@ -10,6 +9,4 @@ for (var i = 0; i < o_GearSlot.gear_slots; i++) {
 		t.count_ = i;
 	}
 	o_GearSlot.gears_in[i][o_GearSlot.current_item] = -1;
-}
-
 }
