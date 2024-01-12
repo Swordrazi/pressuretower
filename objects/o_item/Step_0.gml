@@ -12,16 +12,16 @@ if (!instance_place(x,y,o_bg_conveyorbelt)) {
 	y += 3;
 }
 
-if (instance_place(x,y,o_stop) || instance_place(x+18,y,o_item)) {
+if (instance_place(x,y,o_stop) || instance_place(x+9,y,o_item)) {
 	if (done = true) {
-		x += 2;	
+		x += 3;	
 	}
 } else {
-	x += 2;		
+	x += 3;		
 }
 
 if (instance_place(x,y,o_destroyer)) {
-	o_Storeplace.item_database[id_].item_amount += o_Storeplace.item_database[id_].item_value;
+	o_Storeplace.item_database[id_].item_amount += floor(o_Storeplace.item_database[id_].item_value);
 	if (find_button(10).level > 0 && id_ == 0) {
 		var i = irandom_range(find_button(10).level,10)
 		if (i == 10) {

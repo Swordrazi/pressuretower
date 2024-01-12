@@ -25,3 +25,5 @@ lock = -1;
 unlock = false;
 
 on = false;
+
+prestige = true;

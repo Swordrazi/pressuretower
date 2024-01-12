@@ -8,7 +8,6 @@ function load(_save, _variable, _variable_string){
 
 function find_button(_id){
 	with (o_button) {
-		show_debug_message(instance_id_get(id));
 		if (_id == id.id_) {
 			return id;	
 		}

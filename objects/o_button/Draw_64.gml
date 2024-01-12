@@ -37,6 +37,24 @@ if (countdown == 0 && unlock == true && on == true) {
 		case 11:
 			description = "You hate restocking, don't you?";
 		break;
+		case 12:
+			description = "Your clicks will Pressure more with this one!\nMultiplies by: " + string(level+1) + "\nClick Strength: " + string(o_Storeplace.clicking_power);
+		break;
+		case 13:
+			description = "Unlock the Restocker... whatever it is.";
+		break;
+		case 14:
+			description = "Get 1 More Wood Stock.";
+		break;
+		case 15:
+			description = "Gears... the heart of materials.";
+		break;
+		case 16:
+			description = "Adds 1 XP to Pressurize";
+		break;
+		case 17:
+			description = "Adds 2 XP to Pressurize";
+		break;
 	}
 
 	var descriptions = string_split(description,"\n")

@@ -50,6 +50,30 @@ switch(id_) {
 			text = "Auto Restocking [OFF]";
 		}
 	break;
+	case 12:
+		cost = 250+(level+2)*(level+2)*(level+2);
+		text = "Paper Pressure Clicking [" + string(level) + "]\nCost: " + string(cost) + " Paper";
+	break;
+	case 13:
+		cost = 1000;
+		text = "Unlock The Restocker [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
+	break;
+	case 14:
+		cost = 10*(10*(level*level+10));
+		text = "Wood Stock [" + string(level) + "/9]\nCost: " + string(cost) + " Wood";
+	break;
+	case 15:
+		cost = 1;
+		text = "Gearing (Up) [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
+	break;
+	case 16:
+		cost = 100*((level+1)*(level+1));
+		text = "Pressurize - Paper [" + string(level) + "]\nCost: " + string(cost) + " Paper";
+	break;
+	case 17:
+		cost = 25*((level+1)*(level+1));
+		text = "Pressurize - Wood [" + string(level) + "]\nCost: " + string(cost) + " Wood";
+	break;
 }
 
 texts = string_split(text,"\n")
@@ -76,7 +100,7 @@ if (unlock == false) {
 	}
 }
 
-if (room_get_name(room) != "Room1") {
+/*if (room_get_name(room) != "Room1") {
 	o_button_1.unlock = false;	
 	o_button_2.unlock = false;	
 } else {

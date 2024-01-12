@@ -15,7 +15,7 @@
     "name": "o_button",
     "path": "objects/o_button/o_button.yy",
   },
-  "persistent": true,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
