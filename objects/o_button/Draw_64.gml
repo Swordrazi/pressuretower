@@ -11,7 +11,7 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "Restock the belt by clicking on it. \nYou can only restock once you have fully emptied the previous stock.";
 		break;
 		case 3:
-			description = "Every " + string(round(o_Autoclicker.auto_crush_speed/fps)) + " second(s), the Press will charge by " + string(o_Autoclicker.auto_crush) + ".";
+			description = "Every " + string(round(o_Autoclicker.auto_crush_speed/fps)) + " second(s), the Press will charge by " + string(level) + ".";
 		break;
 		case 4:
 			description = "Increases the quality of the paper, causing it to become stronger, \nbut give more paper!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nValue: " + string(o_Storeplace.item_database[0].item_value);
@@ -20,7 +20,7 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "Paper is getting boring, time to get a better resource.";
 		break;
 		case 6:
-			description = "The amount of Wood you have, increases the speed of the Press,\n but it strengthens the Wood. \nThe increase is: " + string(o_Autoclicker.auto_crush_woodupg*o_Storeplace.item_database[1].item_amount) + "\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power);
+			description = "The amount of Wood you have, increases the speed of the Press,\n but it strengthens the Wood. \nThe increase is: " + string(level*o_Storeplace.item_database[1].item_amount) + "\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power);
 		break;
 		case 7:
 			description = "The paper will lose a bit of its quality, making it weaker!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nThe price of this upgrade scales with 'Quality Paper'";

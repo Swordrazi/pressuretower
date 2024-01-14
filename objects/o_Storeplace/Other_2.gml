@@ -39,12 +39,6 @@ if (file_exists(working_directory + "buttonsave.factory")) {
 	
 	max_button = instance_number(o_button);
 	
-	/*with (o_button) {
-		if (id_ == 0) {
-			o_Storeplace.max_button--;	
-		}
-	}*/
-	
 	for (var i = 1; i <= max_button; i++) {
 		with (o_button) {
 			if (array_length(_loadData) > 0 && id_ != 0) {

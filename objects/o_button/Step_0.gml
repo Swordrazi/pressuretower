@@ -108,6 +108,7 @@ if (unlock == false) {
 	}
 }
 
+/*
 if (prestige == false) {
 	image_index = 1;	
 } else {
