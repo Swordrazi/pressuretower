@@ -11,7 +11,7 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "Restock the belt by clicking on it. \nYou can only restock once you have fully emptied the previous stock.";
 		break;
 		case 3:
-			description = "Every " + string(round(o_Autoclicker.auto_crush_speed/fps)) + " second(s), the Press will charge by " + string(level) + ".";
+			description = "Every " + string(round(o_Autoclicker.auto_crush_speed/fps)) + " second(s), the Press will charge by " + string(level + find_button(19).level) + ".";
 		break;
 		case 4:
 			description = "Increases the quality of the paper, causing it to become stronger, \nbut give more paper!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nValue: " + string(o_Storeplace.item_database[0].item_value);
@@ -23,7 +23,7 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "The amount of Wood you have, increases the speed of the Press,\n but it strengthens the Wood. \nThe increase is: " + string(level*o_Storeplace.item_database[1].item_amount) + "\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power);
 		break;
 		case 7:
-			description = "The paper will lose a bit of its quality, making it weaker!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nThe price of this upgrade scales with 'Quality Paper'";
+			description = "The paper will lose a bit of its quality, making it weaker!\nStrength: " + string(o_Storeplace.item_database[0].item_crushing_power) + "\nThe price of this upgrade scales with 'Quality Paper'\nThis upgrade does not affect the value of the paper.";
 		break;
 		case 8:
 			description = "Increases the quality of the Wood, causing it to become stronger, \nbut give more Wood!\nStrength: " + string(o_Storeplace.item_database[1].item_crushing_power) + "\nValue: " + string(o_Storeplace.item_database[1].item_value);
@@ -56,10 +56,13 @@ if (countdown == 0 && unlock == true && on == true) {
 			description = "Adds 2 XP to Pressurize";
 		break;
 		case 18:
-			description = "Strength = Value\nEvery 100 Strength a Material has, it gains 1 Value.";
+			description = "Strength = Value\nEvery 100 Strength a Material has, it gains 1 Value.\nSoftcapped at: " + string(level*25) + " Value.";
 		break;
 		case 19:
-			description = "Reset Auto Pressing, but all of its levels are kept in this upgrade.\nThe price of this upgrade never changes.";
+			description = "Reset Auto Pressing, but all of its levels are kept in this upgrade.\nThe price of this upgrade never changes.\nThe levels are still active to the Auto Pressing.";
+		break;
+		case 20:
+			description = "Strengthen Paper by +" + string(level*level*125) + " but give it a " + string(level*5) + "% chance to be Polished.\nA Polished Material has double the value.";
 		break;
 	}
 

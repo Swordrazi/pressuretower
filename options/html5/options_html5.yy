@@ -13,7 +13,7 @@
   "option_html5_foldername": "PressureFactory",
   "option_html5_google_analytics_enable": false,
   "option_html5_google_tracking_id": "",
-  "option_html5_icon": "${base_options_dir}/html5/fav.ico",
+  "option_html5_icon": "fav.ico",
   "option_html5_index": "use_default",
   "option_html5_interpolate_pixels": true,
   "option_html5_jsprepend": "",
@@ -29,5 +29,5 @@
   "option_html5_usebuiltinparticles": true,
   "option_html5_usesplash": false,
   "option_html5_version": "1.0.0.0",
-  "option_html5_webgl": 2,
+  "option_html5_webgl": 1,
 }

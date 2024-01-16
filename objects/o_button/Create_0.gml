@@ -18,7 +18,7 @@ image_yscale = texts_amount*4/font_get_size(font1);
 cost = 0;
 level = 0;
 
-countdown = 60;
+countdown = 1;
 countdown_do = false;
 
 lock = -1;

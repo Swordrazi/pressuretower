@@ -15,6 +15,7 @@ if (instance_exists(o_item)) {
 item_database[0].item_crushing_power = item_database[0].item_base_crushing_power;
 item_database[0].item_crushing_power += find_button(4).level*(find_button(4).level+5);
 item_database[0].item_crushing_power -= find_button(7).level*5;
+item_database[0].item_crushing_power += find_button(20).level*125;
 
 //PAPER VALUE
 item_database[0].item_value = item_database[0].item_base_value;
@@ -33,7 +34,7 @@ item_database[0].item_crushing_power = round(item_database[0].item_crushing_powe
 
 //WOOD STRENGTH
 item_database[1].item_crushing_power = item_database[1].item_base_crushing_power;
-item_database[1].item_crushing_power += item_database[1].item_amount*10*find_button(6).level;
+item_database[1].item_crushing_power += item_database[1].item_amount*(10+find_button(6).level)*find_button(6).level;
 item_database[1].item_crushing_power += find_button(8).level*15;
 
 //PAPER VALUE

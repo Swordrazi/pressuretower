@@ -143,5 +143,11 @@ if (unlock == true && on == true) {
 				find_button(3).level = 0;
 			}
 		break;
+		case 20:
+			if (check_cost(0,cost)) {
+				o_Storeplace.item_database[0].item_amount -= cost;
+				level += 1;
+			}
+		break;
 	}
 }

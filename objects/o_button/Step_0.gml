@@ -9,11 +9,11 @@ switch(id_) {
 		text = "Restock\n" + string(o_spawner.amount_) + "/10";
 	break;
 	case 3:
-		cost = 15+level*level;
+		cost = 15+level*round(level/2);
 		text = "Auto Pressing [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 4:
-		cost = 20+level*(20+level);
+		cost = (20+level)*(20+level);
 		text = "Quality Paper [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 5:
@@ -41,7 +41,7 @@ switch(id_) {
 		text = "Wooden Paper [" + string(level) + "/10]\nCost: " + string(cost) + " Wood";
 	break;
 	case 11:
-		cost = 125;
+		cost = 100;
 		if (level < 1) {
 			text = "Auto Restocking [" + string(level) + "/1]\nCost: " + string(cost) + " Wood";
 		} else if (level == 1) {
@@ -81,6 +81,10 @@ switch(id_) {
 	case 19:
 		cost = 1000;
 		text = "Pressure Storage [" + string(level) + "]\nCost: " + string(cost) + " Paper";
+	break;
+	case 20:
+		cost = (25+level)*(20+level)*(10+level*level);
+		text = "Paper Polishing [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 }
 

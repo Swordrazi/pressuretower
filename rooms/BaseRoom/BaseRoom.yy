@@ -30,6 +30,7 @@
     {"name":"inst_77EE20B1","path":"rooms/BaseRoom/BaseRoom.yy",},
     {"name":"inst_534D787E","path":"rooms/BaseRoom/BaseRoom.yy",},
     {"name":"inst_1B257280","path":"rooms/BaseRoom/BaseRoom.yy",},
+    {"name":"inst_77141727","path":"rooms/BaseRoom/BaseRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -51,6 +52,7 @@
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_664391CC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_button_paper_13","path":"objects/o_button_paper_13/o_button_paper_13.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":384.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4C0DA824","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_button_paper_15","path":"objects/o_button_paper_15/o_button_paper_15.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":448.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5E667749","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_button_paper_16","path":"objects/o_button_paper_16/o_button_paper_16.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":128.0,},
+            {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_77141727","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_button_paper_20","path":"objects/o_button_paper_20/o_button_paper_20.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":192.0,},
           ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Auto_Buttons","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4ACDE0A8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_button_auto_3","path":"objects/o_button_auto_3/o_button_auto_3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":128.0,},

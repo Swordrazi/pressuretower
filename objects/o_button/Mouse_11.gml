@@ -1,2 +1,2 @@
 countdown_do = false;
-countdown = 60;
+countdown = 1;

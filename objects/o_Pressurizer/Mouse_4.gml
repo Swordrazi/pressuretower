@@ -15,13 +15,9 @@ if (clicks_ > 9) {
 		o_Storeplace.item_database[i].item_amount = 0;
 		o_Storeplace.item_database[i].item_belt = 0;
 	}
-	for (var i = 0; i < array_length(o_Storeplace.button_unlock); i++) {
-		o_Storeplace.button_unlock[i] = 0;
-	}
 	for (var i = 0; i < array_length(global.order); i++) {
 		global.order[i] = 0;
 	}
-	o_Storeplace.button_unlock[5] = 1;
 	o_Storeplace.item_database[0].item_belt = 10;
 	
 	//NEW GEARS

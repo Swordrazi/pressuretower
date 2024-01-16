@@ -4,6 +4,7 @@ if (global.xp_ > 0) {
 	var i = instance_create_layer(x,y-32,"Instances_1",o_Gears);
 	if (prestige_ = false) {
 		i.id_ = 4;
+		prestige_ = true;
 	} else {
 		i.id_ = irandom_range(1,4);
 	}
