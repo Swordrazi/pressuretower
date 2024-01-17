@@ -15,7 +15,7 @@ if (instance_exists(o_item)) {
 item_database[0].item_crushing_power = item_database[0].item_base_crushing_power;
 item_database[0].item_crushing_power += find_button(4).level*(find_button(4).level+5);
 item_database[0].item_crushing_power -= find_button(7).level*5;
-item_database[0].item_crushing_power += find_button(20).level*125;
+item_database[0].item_crushing_power += find_button(20).level*find_button(20).level*125;
 
 //PAPER VALUE
 item_database[0].item_value = item_database[0].item_base_value;

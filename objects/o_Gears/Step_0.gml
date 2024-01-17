@@ -1,6 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
+//PUTTING GEARS INTO GEAR SLOTS
 if (instance_place(x,y,o_GearSlot) && held_ == false) {
 	if (count_ > -1) {
 		spd = 0;
@@ -15,6 +16,7 @@ if (instance_place(x,y,o_GearSlot) && held_ == false) {
 			}
 		}
 	}
+// PUTTING GEARS INTO THE STORAGE
 } else if (instance_place(x,y,o_GearStorage) && held_ == false) {
 	if (count_ > -1) {
 		spd = 0;
@@ -29,6 +31,7 @@ if (instance_place(x,y,o_GearSlot) && held_ == false) {
 			}
 		}
 	}
+// SCRAPPING GEARS
 } else if (instance_place(x,y,o_ScrapBin) && held_ == false) {
 	instance_destroy();
 	global.xp_ += level_/10;
@@ -38,4 +41,4 @@ if (instance_place(x,y,o_GearSlot) && held_ == false) {
 	on = true;
 }
 
-y += spd;
+y += spd; // MAKING THEM FALL

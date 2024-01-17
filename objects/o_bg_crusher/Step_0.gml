@@ -1,6 +1,6 @@
 
 if (instance_exists(o_item)) {
-	var _item = instance_nearest(x,y,o_item).id_;
+	var _item = instance_nearest(x+32,y+96,o_item).id_;
 	global.maximum_crush_needed = o_Storeplace.item_database[_item].item_crushing_power;
 
 	if (instance_place(x,y,o_item)) {

@@ -56,6 +56,7 @@
     {"id":{"name":"o_item","path":"objects/o_item/o_item.yy",},},
     {"id":{"name":"o_Sorter","path":"objects/o_Sorter/o_Sorter.yy",},},
     {"id":{"name":"spr_crushed_paper","path":"sprites/spr_crushed_paper/spr_crushed_paper.yy",},},
+    {"id":{"name":"o_button_1_text","path":"objects/o_button_1_text/o_button_1_text.yy",},},
     {"id":{"name":"spr_ScrapBin","path":"sprites/spr_ScrapBin/spr_ScrapBin.yy",},},
     {"id":{"name":"o_Pressurizer","path":"objects/o_Pressurizer/o_Pressurizer.yy",},},
     {"id":{"name":"o_button_paper_menu","path":"objects/o_button_paper_menu/o_button_paper_menu.yy",},},

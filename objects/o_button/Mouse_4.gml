@@ -4,6 +4,7 @@ if (unlock == true && on == true) {
 			show_debug_message("ERROR");
 		break;
 		case 1:
+			var popup = global.crush_power;
 			global.crush_power += o_Storeplace.clicking_power;
 			var i = irandom_range(0,global.crit_chance_);
 			var i2 = irandom_range(1,100);
@@ -13,6 +14,9 @@ if (unlock == true && on == true) {
 			if (global.crush_power > global.maximum_crush_needed) {
 				global.crush_power = global.maximum_crush_needed;
 			}
+			popup = global.crush_power - popup;
+			var instance = instance_create_layer(x+irandom_range(0,image_xscale*32),y,"Instances",o_button_1_text);
+			instance.text = popup;
 		break;
 		case 2:
 			if (o_spawner.amount_ == 10) {
@@ -151,3 +155,6 @@ if (unlock == true && on == true) {
 		break;
 	}
 }
+
+image_index = 1;
+alarm_set(0,5)

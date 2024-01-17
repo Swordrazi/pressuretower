@@ -43,7 +43,7 @@ if (file_exists(working_directory + "buttonsave.factory")) {
 		with (o_button) {
 			if (array_length(_loadData) > 0 && id_ != 0) {
 				var _loadButton = array_pop(_loadData);
-				//show_debug_message(string(array_length(_loadData)) + " " + string(id_) + " " + string(_loadButton.id_))
+				show_debug_message(string(array_length(_loadData)) + " " + string(id_) + " " + string(_loadButton.id_))
 				if (id_ == _loadButton.id_) {
 					if (variable_struct_exists(_loadButton,string(nameof(id_)))) {
 						id_ = _loadButton.id_
