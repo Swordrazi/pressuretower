@@ -1,4 +1,4 @@
-
+show_debug_message(file_exists(working_directory + "materialsave.factory"))
 if (file_exists(working_directory + "materialsave.factory")) {
 	show_debug_message("A")
 	var _buffer = buffer_load("materialsave.factory");

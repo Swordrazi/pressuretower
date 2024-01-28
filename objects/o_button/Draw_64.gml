@@ -78,8 +78,13 @@ if (countdown == 0 && unlock == true && on == true) {
 	}
 	
 	draw_set_color(c_black);
-	var m_x = window_mouse_get_x();
-	var m_y = window_mouse_get_y();
+	if (os_browser == browser_not_a_browser) {
+		var m_x = window_mouse_get_x();
+		var m_y = window_mouse_get_y();
+	} else if (os_browser != browser_not_a_browser) {
+		var m_x = display_mouse_get_x();
+		var m_y = display_mouse_get_y();
+	}
 	draw_rectangle(m_x,m_y,m_x+_length*font_get_size(font2),m_y+_texts_amount*2*font_get_size(font2), false)
 	draw_set_color(c_white);
 	draw_set_font(font2);
