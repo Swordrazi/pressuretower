@@ -10,13 +10,13 @@ for (var i = 0; i < array_length(item_database); i++) {
 		item_unlock : item_database[i].item_unlock,
 		item_belt : item_database[i].item_belt,
 	}
-	
 	array_push(_saveData, _saveMaterial);
 }
 
 var _string = json_stringify(_saveData);
 var _buffer = buffer_create(string_byte_length(_string)+1, buffer_fixed, 1);
 buffer_write(_buffer, buffer_string, _string);
+show_debug_message(buffer_read(_buffer,buffer_string));
 buffer_save(_buffer, "materialsave.factory");
 buffer_delete(_buffer);
 
@@ -84,7 +84,6 @@ _saveData = array_create(0);
 for (var i2 = 0; i2 < o_GearSlot.item_amount; i2++) {
 	for (var i = 0; i < o_GearSlot.gear_slots; i++) {
 		var _saveGear_inSlot = o_GearSlot.gears_in[i][i2];
-		show_debug_message(_saveGear_inSlot)
 		array_push(_saveData, _saveGear_inSlot);
 	}
 }

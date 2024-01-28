@@ -1,6 +1,5 @@
-show_debug_message(file_exists(working_directory + "materialsave.factory"))
-if (file_exists(working_directory + "materialsave.factory")) {
-	show_debug_message("A")
+show_debug_message(file_exists("materialsave.factory"));
+if (file_exists("materialsave.factory")) {
 	var _buffer = buffer_load("materialsave.factory");
 	var _string = buffer_read( _buffer, buffer_string);
 	buffer_delete(_buffer);
@@ -30,7 +29,7 @@ if (file_exists(working_directory + "materialsave.factory")) {
 }
 
 
-if (file_exists(working_directory + "buttonsave.factory")) {
+if (file_exists("buttonsave.factory")) {
 	var _buffer = buffer_load("buttonsave.factory");
 	var _string = buffer_read( _buffer, buffer_string);
 	buffer_delete(_buffer);
@@ -67,7 +66,7 @@ if (file_exists(working_directory + "buttonsave.factory")) {
 	}
 }
 
-if (file_exists(working_directory + "autosave.factory")) {
+if (file_exists("autosave.factory")) {
 	var _buffer = buffer_load("autosave.factory");
 	var _string = buffer_read( _buffer, buffer_string);
 	buffer_delete(_buffer);
@@ -82,7 +81,7 @@ if (file_exists(working_directory + "autosave.factory")) {
 	}
 }
 
-if (file_exists(working_directory + "ordersave.factory")) {
+if (file_exists("ordersave.factory")) {
 	var _buffer = buffer_load("ordersave.factory");
 	var _string = buffer_read( _buffer, buffer_string);
 	buffer_delete(_buffer);
@@ -101,7 +100,7 @@ if (file_exists(working_directory + "ordersave.factory")) {
 	}
 }
 
-if (file_exists(working_directory + "gearsave.factory")) {
+if (file_exists("gearsave.factory")) {
 	var _buffer = buffer_load("gearsave.factory");
 	var _string = buffer_read( _buffer, buffer_string);
 	buffer_delete(_buffer);
