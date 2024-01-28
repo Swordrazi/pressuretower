@@ -2,7 +2,7 @@ clicks_++;
 
 image_xscale -= 0.2;
 
-if (clicks_ > 9) {
+if (clicks_ > 9 && global.xp_ >= minimum) {
 	prestige_ = false;
 	//PRESTIGE
 	with (o_button) {
@@ -24,4 +24,6 @@ if (clicks_ > 9) {
 	alarm_set(0,10);
 	
 	clicks_ = 0;
+} else if (clicks_ > 9) {
+	clicks_ = 0;	
 }

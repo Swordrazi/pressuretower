@@ -1,6 +1,6 @@
 randomize();
 
-if (global.xp_ > 0) {
+if (global.xp_ >= minimum) {
 	var i = instance_create_layer(x,y-32,"Instances_1",o_Gears);
 	if (prestige_ = false) {
 		i.id_ = 4;

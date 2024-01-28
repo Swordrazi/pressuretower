@@ -148,7 +148,7 @@ if (unlock == true && on == true) {
 			}
 		break;
 		case 20:
-			if (check_cost(0,cost)) {
+			if (check_cost(0,cost) && level < 20) {
 				o_Storeplace.item_database[0].item_amount -= cost;
 				level += 1;
 			}

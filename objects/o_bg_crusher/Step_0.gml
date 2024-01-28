@@ -15,8 +15,10 @@ if (instance_exists(o_item)) {
 			i.done = true;
 			one_done = true;
 			if (find_button(20).level > 0) {
-				var chance = irandom_range(find_button(20).level*5,100)
-				if (chance >= 100) { i.polished = 2; }
+				var chance = irandom_range(0,100)
+				if (find_button(20).level*5 >= chance) { 
+					i.polished = 2;
+				}
 			}
 			image_speed = 1;
 		}

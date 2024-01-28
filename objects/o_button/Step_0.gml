@@ -67,11 +67,11 @@ switch(id_) {
 		text = "Gearing (Up) [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
 	break;
 	case 16:
-		cost = 75*((level+1)*(level+1));
+		cost = 50*((level+1)*(level+1));
 		text = "Pressurize - Paper [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 17:
-		cost = 20*((level+1)*(level+1));
+		cost = 10*((level+1)*(level+1));
 		text = "Pressurize - Wood [" + string(level) + "]\nCost: " + string(cost) + " Wood";
 	break;
 	case 18:
@@ -84,7 +84,7 @@ switch(id_) {
 	break;
 	case 20:
 		cost = (25+level)*(20+level)*(10+level*level);
-		text = "Paper Polishing [" + string(level) + "]\nCost: " + string(cost) + " Paper";
+		text = "Paper Polishing [" + string(level) + "/20]\nCost: " + string(cost) + " Paper";
 	break;
 }
 
