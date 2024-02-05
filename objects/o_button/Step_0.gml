@@ -13,11 +13,11 @@ switch(id_) {
 		text = "Auto Pressing [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 4:
-		cost = (20+level)*(20+level);
+		cost = (20+level)*(2+level*4);
 		text = "Quality Paper [" + string(level) + "]\nCost: " + string(cost) + " Paper";
 	break;
 	case 5:
-		cost = 200;
+		cost = 124;
 		text = "Unlock Wood [" + string(level) + "/1]\nCost: " + string(cost) + " Paper";
 	break;
 	case 6:
